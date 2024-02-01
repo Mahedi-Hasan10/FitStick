@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="flex items-center gap-3 justify-between mx-auto xl:px-[300px] lg:px-[150px] md:px-[100px] px-[20px] lg:h-[121px] h-[90px] relative">
+    <nav className="flex items-center gap-3 justify-between mx-auto 2xl:px-[300px] lg:px-[100px] md:px-[100px] px-[20px] lg:h-[121px] h-[90px] relative">
       {/* logo */}
       <div className="bg-white">
         <Image src="/hero/Logo.png" alt="logo" width={215} height={44} />
