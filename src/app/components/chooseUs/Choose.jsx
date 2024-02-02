@@ -18,7 +18,7 @@ const Choose = () => {
                         Welcome to this comprehensive guide on the Apple Vision Pro features, where we delve deep into the innovative advancements of this ground brtechnology. Apple has always been at technological innovation, and the Vision Pro features 
                     </p>
                 </div>
-                <div className='flex justify-between lg:flex-nowrap flex-wrap 2xl:mt-[40px] lg:mt-5 mt-3'>
+                <div className='flex justify-between md:flex-nowrap flex-wrap 2xl:mt-[40px] lg:mt-5 mt-3'>
                     <div className='xl:py-2 py-6 flex flex-col gap-2'>
                         <div className='flex items-center gap-2 capitalize mb-2'>
                             <Image src="/choose/line.png" height={1} width={112} alt="choose us" />

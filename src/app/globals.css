@@ -9,5 +9,45 @@ body{
 .ant-drawer-header,
 .ant-drawer-body
 {
-    background: rgb(5, 255, 255)!important;
+    background: #FF4E25!important;
 }
+
+.ant-card-meta-title{
+    color: white!important;
+    font-size: 24px!important;
+    font-weight: 700!important;
+
+}
+.ant-card-meta-description
+{
+    font-size: 16px!important;
+    font-weight: 400!important;
+    color: white!important;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+.ant-card:hover .ant-card-meta-title {
+    color: #FF4E25!important;
+  }
+  
+  .ant-card:hover .bottom-card {
+    color: #FF4E25!important;
+  }
+
+
+.ant-avatar{
+    border-radius: 0!important;
+}
+
+.btn-icon{
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+    background-color:#FF4E25;
+}
+.ant-card:hover .btn-icon {
+    height: 1px;
+    width: 34px;
+  }
+  
