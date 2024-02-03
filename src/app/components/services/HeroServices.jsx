@@ -12,8 +12,8 @@ const HeroServices = () => {
             </div>
             <div className='flex justify-around lg:flex-nowrap flex-wrap gap-2'>
                 <ServiceCard title="gym fitness class"/>
-                <ServiceCard title="Body building"/>
-                <ServiceCard title="power lifting"/>
+                <ServiceCard title="Body building class"/>
+                <ServiceCard title="power lifting class"/>
             </div>
             <div className='flex items-center justify-center'>
                 <div className='py-8 flex gap-3 items-center '>
