@@ -1,7 +1,8 @@
 "use client";
 import Link from 'next/link';   
-import ServiceCard from './ServiceCard';
+
 import { FaCircle,FaRegCircle } from "react-icons/fa";
+import ServiceCard from './ServiceCard';
 
 const HeroServices = () => {
     return (
@@ -10,7 +11,7 @@ const HeroServices = () => {
                 <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px]'>Services We&apos;re Offering</h2>
                 <Link href="/" className='lg:text-lg text-base lg:font-bold font-medium text-[#FF4E25] underline'>View All Services</Link>
             </div>
-            <div className='flex justify-around lg:flex-nowrap flex-wrap gap-2'>
+            <div className='w-fit flex justify-around lg:flex-nowrap flex-wrap gap-4'>
                 <ServiceCard title="gym fitness class"/>
                 <ServiceCard title="Body building class"/>
                 <ServiceCard title="power lifting class"/>

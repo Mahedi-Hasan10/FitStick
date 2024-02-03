@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Link from 'next/link'
 import LatestCard from './LatestCard';
 
+
 const NAVLINKLIST = [
     { id: 1, name: 'All' },
     { id: 2, name: 'Youga' },
@@ -18,7 +19,7 @@ const HeroLatest = () => {
     }
 
     return (
-        <section className="py-5 mx-auto">
+        <section className="py-5 mx-auto mt-[60px]">
             <h1 className="text-5xl font-bold leading-[57px] capitalize text-center">latest workout fitness</h1>
             <div className='flex justify-center items-center mt-5'>
                 <div className='flex lg:gap-[30px] flex-wrap text-base font-semibold justify-center'>

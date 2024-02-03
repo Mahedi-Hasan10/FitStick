@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import MyButton from '../Button';
+import MyButton from '../../Button';
 const Choose = () => {
     return (
         <section className='flex xl:flex-nowrap lg:flex-nowrap flex-wrap 2xl:gap-[60px] lg:gap-[40px] gap-[20px] mt-[100px]'>

@@ -2,12 +2,17 @@ import Image from "next/image";
 import MyButton from "./components/Button";
 import Link from "next/link";
 import { CgArrowLongLeft, CgArrowLongRight } from "react-icons/cg";
-import Choose from "./components/chooseUs/Choose";
-import HeroServices from "./components/services/HeroServices";
-import HeroLatest from "./components/heroLatest/HeroLatest";
+import Choose from "./components/Hero/chooseUs/Choose";
+import HeroServices from "./components/Hero/services/HeroServices";
+import HeroLatest from "./components/Hero/heroLatest/HeroLatest";
+import WorkingHour from "./components/Hero/workingHour/WorkingHour";
+import Team from "./components/Hero/team/Team";
+import Pricing from "./components/Hero/pricing/Pricing";
+import CustomerSay from "./components/Hero/customerSay/CustomerSay";
+
 export default function Home() {
   return (
-    <main className="2xl:px-[320px] lg:px-[100px] md:px-[50px] px-[10px]">
+    <main className="2xl:px-[300px] lg:px-[100px] md:px-[50px] px-[10px]">
       {/* hero section start  */}
       <section>
         <div className="flex gap-[40px] relative">
@@ -104,17 +109,14 @@ export default function Home() {
       </section>
       {/* hero section end  */}
 
-      {/* choose section start */}
       <Choose />
-      {/* choose section end */}
-
-      {/* service section start  */}
       <HeroServices/>
-      {/* service section end */}
+      <HeroLatest/>
+      <WorkingHour/>
+      <Team/>
+      <Pricing/>
+      <CustomerSay/>
 
-      {/* hero latest start  */}
-        <HeroLatest/>
-      {/* hero latest end  */}
     </main>
   );
 }
