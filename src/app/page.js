@@ -10,6 +10,7 @@ import Team from "./components/Hero/team/Team";
 import Pricing from "./components/Hero/pricing/Pricing";
 import CustomerSay from "./components/Hero/customerSay/CustomerSay";
 import LatestBlog from "./components/Hero/blog/LatestBlog";
+import Schedule from "./components/Hero/schedule/Schedule";
 
 export default function Home() {
   return (
@@ -113,7 +114,7 @@ export default function Home() {
       <Choose />
       <HeroServices/>
       <HeroLatest/>
-      <WorkingHour/>
+      <Schedule/>
       <Team/>
       <Pricing/>
       <CustomerSay/>

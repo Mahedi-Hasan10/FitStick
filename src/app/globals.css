@@ -51,3 +51,21 @@ body{
     width: 34px;
   }
   
+
+  .swiper-pagination-bullet{
+    background: #FF4E25!important;
+    height: 16px!important;
+    width: 16px!important;
+  }
+  .swiper-pagination{
+    display: flex!important;
+    align-items: center!important;
+    justify-content: center!important;
+  }
+  
+  .swiper-pagination {
+    position: absolute; /* or relative, fixed, etc. depending on your layout */
+    bottom: 10px; /* Adjust the distance from the bottom */
+    left: 50%; /* Adjust the horizontal position */
+    transform: translateX(-50%); /* Center the pagination horizontally */
+  }

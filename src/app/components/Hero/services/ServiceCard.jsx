@@ -14,7 +14,7 @@ const ServiceCard = ({title, avetarSrc}) => {
         style={{
           height:267,
         }}
-        className='bg-transparent ml-4 text-white border border-gray-500 hover:border-white max-w-[424px] '
+        className='bg-transparent ml-4 mb-[50px] text-white border border-gray-500 hover:border-white max-w-[424px] '
        >
         <Meta 
          className='flex items-center capitalize line-clamp-1'
