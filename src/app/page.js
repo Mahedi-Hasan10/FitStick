@@ -9,6 +9,7 @@ import WorkingHour from "./components/Hero/workingHour/WorkingHour";
 import Team from "./components/Hero/team/Team";
 import Pricing from "./components/Hero/pricing/Pricing";
 import CustomerSay from "./components/Hero/customerSay/CustomerSay";
+import LatestBlog from "./components/Hero/blog/LatestBlog";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
       <section>
         <div className="flex gap-[40px] relative">
           <div className="xl:max-w-[660px] lg:py-[100px] sm:py-[40] py-[30px] flex flex-col gap-5 md:mx-0 mx-auto">
-            <div className="xl:text-[68px] lg:text-[50px] text-[35px] xl:font-bold font-semibold xl:leading-[81px] md:mx-0  mx-auto">
+            <div className="xl:text-[68px] lg:text-[50px] text-[30px] xl:font-bold font-semibold xl:leading-[81px] leading-10 md:mx-0  mx-auto">
               <h1 className="flex md:flex-nowrap flex-wrap gap-2 items-center">
                 <Image
                   src="/hero/hero-2.jpg"
@@ -93,7 +94,7 @@ export default function Home() {
                 height={149}
                 alt="play button"
               />
-              <h2 className="text-[60px] font-bold absolute right-[-30px] lg:top-[30px] top-[10px]">
+              <h2 className="text-[60px] font-bold absolute lg:right-[-30px] right-0 lg:top-[30px] md:top-[10px] top-[20px]">
                 01
               </h2>
             </div>
@@ -116,6 +117,7 @@ export default function Home() {
       <Team/>
       <Pricing/>
       <CustomerSay/>
+      <LatestBlog/>
 
     </main>
   );

@@ -8,10 +8,10 @@ const Choose = () => {
             </div>
             <div>
                 <div className='capitalize'>
-                    <h2 className='2xl:text-[48px] xl:text-[40px] text-[30px] 2xl:fontbold lg:font-semibold font-medium xl:leading-[57px] leading-[40px]'>
+                    <h2 className='2xl:text-[48px] xl:text-[40px] text-[30px] lg:font-bold font-semibold xl:leading-[57px] leading-[40px]'>
                         why choose us?
                     </h2>
-                    <h2 className='2xl:text-[48px] xl:text-[40px] text-[30px] 2xl:fontbold lg:font-semibold font-medium xl:leading-[57px] leading-[40px]'>
+                    <h2 className='2xl:text-[48px] xl:text-[40px] text-[30px] lg:font-bold font-semibold xl:leading-[57px] leading-[40px]'>
                         because we&apos;re the best.
                     </h2>
                     <p className='text-base lg:font-semibold font-medium leading-6 text-[#AAAAAA] max-w-[760px] mt-5'>

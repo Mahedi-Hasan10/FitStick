@@ -19,15 +19,15 @@ const HeroLatest = () => {
     }
 
     return (
-        <section className="py-5 mx-auto mt-[60px]">
-            <h1 className="text-5xl font-bold leading-[57px] capitalize text-center">latest workout fitness</h1>
+        <section className="py-5 mx-auto lg:mt-[60px]">
+            <h1 className="lg:text-5xl text-[30px] lg:font-bold font-semibold lg:leading-[57px] leading-10 capitalize text-center">latest workout fitness</h1>
             <div className='flex justify-center items-center mt-5'>
-                <div className='flex lg:gap-[30px] flex-wrap text-base font-semibold justify-center'>
+                <div className='grid lg:grid-cols-5 grid-cols-3  lg:gap-[30px]  text-base lg:font-semibold font-medium '>
                     {NAVLINKLIST.map((item) => (
-                        <Link href="/"  key={item.id} 
+                        <div href="/"  key={item.id} 
                         onClick={() => handleActive(item.id)}
                         style={{ backgroundColor: item.id === active ? '#ff4e25' : 'transparent' }}
-                        className={`py-3 px-8 hover:bg-[#ff4e25] text-white lg:mt-0 mt-2`}>{item.name}</Link>
+                        className={`py-3 px-8 hover:bg-[#ff4e25] text-white lg:mt-0 mt-2`}>{item.name}</div>
                     ))} 
                 </div>
             </div>

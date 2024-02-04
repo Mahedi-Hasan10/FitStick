@@ -17,14 +17,14 @@ const Pricing = () => {
                     <Switch defaultChecked onClick={handleCheck}/>
                 <h5>Yearly</h5>
             </div>
-            <div className='flex justify-between lg:flex-nowrap flex-wrap gap-[20px] mx-auto relative'>
+            {/* <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto relative gap-3'>
                 <PricingCard Title="Basic Fitness" pricing="00.0" duration="Free"/>
                 <PricingCard Title="Premium Fitness" pricing="20" duration="Month"/>
                 <PricingCard Title="Premium Plus" pricing="40" duration="Yearly"/>
                 
                 <Image  
                 src = "/bgshadow.png" className='absolute top-0 right-[35%] rounded-full' alt="group" width={200} height={200}/>
-            </div>
+            </div> */}
         </section>
     );
 };
