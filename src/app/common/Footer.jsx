@@ -14,7 +14,7 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-7 capitalize mt-[60px]">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-2 capitalize mt-[60px] relative ">
                     <div className="">
                         <div className="flex items-center mb-4">
                             <div className="h-[16px] w-[16px] rounded-full bg-[#fe4651]"></div>
@@ -56,10 +56,13 @@ const Footer = () => {
                             <h3 className="text-xl font-bold">follow us</h3>
                         </div>
                         <p className="text-base font-normal leading-5">
-                        A gym, also known as a fitness center or health club, is a facility dedicated to physical fitness and exercise gyms.
+                            A gym, also known as a fitness center or health club, is a facility dedicated to physical fitness and exercise gyms.
                         </p>
                     </div>
+                
+                    <Image src="/footerBG.png" alt="footerBG" height={300} width={500} className="absolute bottom-0 md:left-[25%] right-0 "/>
                 </div>
+
             </div>  
             <div className="flex items-center py-4 justify-center border-t border-t-white border-opacity-30 mt-3">
                 <p className="text-sm font-bold text-center  capitalize">copyright 2023. all right reserved. Fitstick</p>           
