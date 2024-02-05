@@ -463,8 +463,8 @@ const Schedule = () => {
     );
   
     return (
-      <div className='mt-[150px]'>
-        <h1 className='lg:text-[48px] md:text-[35px] text-[30px] text-center lg:font-bold font-semibold mb-[60px] capitalize'>join our class</h1>
+      <div className='lg:mt-[150px] md:mt-[80px] mt-8'>
+        <h1 className='lg:text-[48px] md:text-[35px] text-[30px] text-center lg:font-bold font-semibold lg:mb-[60px] mb-[30px] capitalize'>join our class</h1>
         <div className='flex justify-between lg:mx-[47px] mb-[40px] overflow-x-auto'>
           {events.map((item, i) => (
             <button key={i} className={`font-bold ${event === item ? 'bg-[#FF4E25] text-white' : 'text-black1'} py-[12px] px-[30px] hover:bg-[#FF4E25]`} onClick={() => { setEvent(item) }}>

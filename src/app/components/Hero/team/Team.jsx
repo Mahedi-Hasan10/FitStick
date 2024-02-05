@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaLinkedin, FaSkype } from 'react-icons/fa';
 const Team = () => {
     return (
-        <section className='py-12 mt-[80px]'>
+        <section className='py-12 lg:mt-[80px]'>
         <div className='flex items-center justify-between mb-7'>
             <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px]'>Team Of Expert Trainer</h2>
             <Link href="/" className='lg:text-lg text-base lg:font-bold font-medium text-[#FF4E25] underline'>View All</Link>

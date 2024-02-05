@@ -19,7 +19,7 @@ const HeroLatest = () => {
     }
 
     return (
-        <section className="py-5 mx-auto lg:mt-[60px]">
+        <section className="lg:py-5 mx-auto lg:mt-[60px]">
             <h1 className="lg:text-5xl text-[30px] lg:font-bold font-semibold lg:leading-[57px] leading-10 capitalize text-center">latest workout fitness</h1>
             <div className='flex justify-center items-center mt-5'>
                 <div className='grid lg:grid-cols-5 grid-cols-3  lg:gap-[30px]  text-base lg:font-semibold font-medium '>

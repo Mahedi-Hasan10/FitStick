@@ -20,8 +20,8 @@ const HeroServices = () => {
     return (
         <section className='py-12 mt-5 overflow-hidden'>
             <div className='flex items-center justify-between mb-[20px]'>
-                <h2 className='xl:text-5xl lg:text-3xl text-[30px] lg:font-bold font-semibold lg:leading-[57px] leading-[30px]'>Services We&apos;re Offering</h2>
-                <Link href="/" className='lg:text-lg text-base lg:font-bold font-medium text-[#FF4E25] underline'>View All Services</Link>
+                <h2 className='xl:text-5xl lg:text-3xl text-2xl lg:font-bold font-semibold lg:leading-[57px] leading-[30px]'>Services We&apos;re Offering</h2>
+                <Link href="/" className='lg:text-lg text-base lg:font-bold md:font-medium font-normal text-[#FF4E25] underline'>View All Services</Link>
             </div>
             <Swiper
                         pagination={{

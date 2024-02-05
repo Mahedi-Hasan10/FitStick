@@ -65,9 +65,9 @@ const CustomerSay = () => {
     }
 
     return (
-        <section className="mt-[100px]">
+        <section className="lg:mt-[100px] mt-12">
             <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px] text-center capitalize'>What our saying about us</h2>
-            <div className='mt-[60px] flex lg:flex-nowrap flex-wrap justify-evenly gap-[40px]'>
+            <div className='lg:mt-[60px] mt-8 flex lg:flex-nowrap flex-wrap justify-evenly gap-[40px]'>
                 <div className='lg:w-[40%] lg:h-[431px]'>
                 <Image src={customerData[0]?.thumbnail} alt="group" width={372} height={431} className='f-full w-full border-r border-red-500 pr-4 border-b  pb-4 '/>
                 </div>
@@ -85,11 +85,11 @@ const CustomerSay = () => {
                         className="mySwiper lg:max-w-[60%] relative"
                     >
                 <SwiperSlide>
-                <div className='flex flex-col gap-7 p-4 mt-2'>
-                    <div className='flex justify-between flex-wrap'>
+                <div className='flex flex-col gap-7 px-2 pt-2 pb-7 mt-2'>
+                    <div className='flex lg:gap-14 gap-6 items-center flex-wrap mx-auto'>
                         {
                             CustomerSayData.map((data,index) => (
-                                <div  key={index} onClick={() => handleCustomer(data.id)}>
+                                <div className=''  key={index} onClick={() => handleCustomer(data.id)}>
                                         <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
                                 </div>
                             ))

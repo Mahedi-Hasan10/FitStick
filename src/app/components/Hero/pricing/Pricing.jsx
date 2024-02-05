@@ -10,7 +10,7 @@ const Pricing = () => {
     };
     // console.log(checKed);
     return (
-        <section className='mt-[100px]'>
+        <section className='lg:mt-[100px] mt-8'>
             <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px] text-center'>The Right plan on pricing</h2>
             <div className="flex gap-6 justify-center py-7 text-lg font-bold">
                 <h5 className="text-[#FF4E25]">Monthly</h5>

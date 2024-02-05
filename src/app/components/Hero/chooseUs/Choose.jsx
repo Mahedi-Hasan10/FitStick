@@ -2,7 +2,7 @@ import Image from 'next/image';
 import MyButton from '../../Button';
 const Choose = () => {
     return (
-        <section className='flex xl:flex-nowrap lg:flex-nowrap flex-wrap 2xl:gap-[60px] lg:gap-[40px] gap-[20px] mt-[100px]'>
+        <section className='flex xl:flex-nowrap lg:flex-nowrap flex-wrap 2xl:gap-[60px] lg:gap-[40px] gap-[20px] lg:mt-[100px] md:mt-[50px] mt-5'>
             <div className='flex items-start justify-center'>
                 <Image src="/choose/choose1.png" height={528} width={424} alt="choose us" />
             </div>
@@ -19,20 +19,20 @@ const Choose = () => {
                     </p>
                 </div>
                 <div className='flex justify-between md:flex-nowrap flex-wrap 2xl:mt-[40px] lg:mt-5 mt-3'>
-                    <div className='xl:py-2 py-6 flex flex-col gap-2'>
+                    <div className='xl:py-6 py-2 flex flex-col lg:gap-2 lg:mx-0 mx-auto'>
                         <div className='flex items-center gap-2 capitalize mb-2'>
-                            <Image src="/choose/line.png" height={1} width={112} alt="choose us" />
+                            <Image className='md:flex hidden' src="/choose/line.png" height={1} width={112} alt="choose us" />
                             <p className='lg:text-lg text-md lg:font-semibold font-medium'>we find your trainer.</p>
                         </div>
                         <div className='flex items-center gap-2 capitalize mb-2'>
-                            <Image src="/choose/line.png" height={1} width={112} alt="choose us" />
+                            <Image className='md:flex hidden' src="/choose/line.png" height={1} width={112} alt="choose us" />
                             <p className='lg:text-lg text-md lg:font-semibold font-medium'>we make your plan.</p>
                         </div>
                         <div className='flex items-center gap-2 capitalize 2xl:mb-10 lg:mb-6 mb-3 '>
-                            <Image src="/choose/line.png" height={1} width={112} alt="choose us" />
+                            <Image className='md:flex hidden' src="/choose/line.png" height={1} width={112} alt="choose us" />
                             <p className='lg:text-lg text-md lg:font-semibold font-medium'>tack training anywhere.</p>
                         </div>
-                        <div className='flex items-center lg:justify-start justify-center'>
+                        <div className='flex items-center lg:justify-start justify-center mb-3'>
                         <MyButton buttonName="Get Started Now" btnBG="bg-[#FF6E18]"/>
                         </div>
                     </div>
@@ -40,7 +40,6 @@ const Choose = () => {
                         <Image src="/choose/choose2.png" height={270} width={296} alt="choose us" />
                     </div>
                 </div>
-
             </div>
         </section>
     );

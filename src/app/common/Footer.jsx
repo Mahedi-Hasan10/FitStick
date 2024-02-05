@@ -2,7 +2,7 @@ import MyButton from "../components/Button";
 import Image from "next/image";
 const Footer = () => {
     return (
-        <footer className="bg-[#01060f] py-[40px]">
+        <footer className="bg-[#01060f] pt-[40px]">
             <div className="flex flex-col mx-auto 2xl:px-[300px] lg:px-[100px] md:px-[50px] px-[10px] ">
                 <div className="flex items-center justify-center">
                     <form className="max-w-[821px] w-full">
@@ -14,7 +14,7 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[80px] capitalize mt-[60px]">
+                <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-[80px] gap-7 capitalize mt-[60px]">
                     <div className="">
                         <div className="flex items-center mb-4">
                             <div className="h-[16px] w-[16px] rounded-full bg-[#fe4651]"></div>
@@ -29,29 +29,29 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="">
-                        <div className="flex items-center gap-3 mb-6">
+                        <div className="flex items-center gap-3 lg:mb-6 mb-3">
                             <div className="h-[16px] w-[16px] rounded-full bg-[#fe4651]"></div>
                             <h3 className="text-xl font-bold">Quick Links</h3>
                         </div>
-                        <ul className="text-base font-semibold leading-5 flex flex-col gap-3">
+                        <ul className="text-base font-semibold leading-5 flex flex-col lg:gap-3">
                             <li className="mb-2">Contact</li>
                             <li className="mb-2">Terms & Conditions</li>
                             <li className="mb-2">Privacy & Policy</li>
                         </ul>
                     </div>
                     <div className="">
-                        <div className="flex items-center gap-3 mb-6">
+                        <div className="flex items-center gap-3 lg:mb-6 mb-3">
                             <div className="h-[16px] w-[16px] rounded-full bg-[#fe4651]"></div>
                             <h3 className="text-xl font-bold">Useful Links</h3>
                         </div>
-                        <ul className="text-base font-semibold leading-5 flex flex-col gap-3">
+                        <ul className="text-base font-semibold leading-5 flex flex-col lg:gap-3">
                             <li className="mb-2">About Us</li>
                             <li className="mb-2">Blogs</li>
                             <li className="mb-2">FAQS</li>
                         </ul>
                     </div>
                     <div className="">
-                        <div className="flex items-center gap-3 mb-6">
+                        <div className="flex items-center gap-3 lg:mb-6 mb-3">
                             <div className="h-[16px] w-[16px] rounded-full bg-[#fe4651]"></div>
                             <h3 className="text-xl font-bold">follow us</h3>
                         </div>
@@ -60,7 +60,10 @@ const Footer = () => {
                         </p>
                     </div>
                 </div>
-            </div>           
+            </div>  
+            <div className="flex items-center py-4 justify-center border-t border-t-white border-opacity-30 mt-3">
+                <p className="text-sm font-bold text-center  capitalize">copyright 2023. all right reserved. Fitstick</p>           
+            </div>  
         </footer>
     );
 };
