@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import MyButton from "./components/Button";
 import Link from "next/link";
@@ -11,8 +13,35 @@ import Pricing from "./components/Hero/pricing/Pricing";
 import CustomerSay from "./components/Hero/customerSay/CustomerSay";
 import LatestBlog from "./components/Hero/blog/LatestBlog";
 import Schedule from "./components/Hero/schedule/Schedule";
+import { FaPlay } from "react-icons/fa";
+
 
 export default function Home() {
+  const [nextImageHangle, setNextImageHangle] = useState(1);
+  const [prevImageHangle, setPrevImageHangle] = useState(1);
+  const [imageCount, setImageCount] = useState(1);
+
+  const NextimageHandle = ()=>{
+   if(nextImageHangle <=5)
+   {
+      setImageCount(nextImageHangle+1);
+      setNextImageHangle(nextImageHangle+1);
+   }else{
+      setImageCount(1);
+      setNextImageHangle(1);
+   }
+  }
+  const PrevimageHandle = ()=>{
+    if(prevImageHangle <=1)
+    {
+       setImageCount(6);
+       setPrevImageHangle(6);
+
+    }else{
+        setImageCount(prevImageHangle-1);
+        setPrevImageHangle(prevImageHangle-1);
+      }
+  }
   return (
     <main className="2xl:px-[300px] lg:px-[100px] md:px-[50px] px-[10px]">
       {/* hero section start  */}
@@ -90,22 +119,26 @@ export default function Home() {
           <div className="flex md:flex-nowrap flex-wrap items-center gap-[20px]">
             <div className="relative mx-auto">
               <Image
-                src="/hero/videoicon.png"
+                src={`/latest/l${imageCount}.png`}
                 width={417}
                 height={149}
                 alt="play button"
+                className="rounded-[75px] max-h-[149px]"
               />
-              <h2 className="text-[60px] font-bold absolute lg:right-[-30px] right-0 lg:top-[30px] md:top-[10px] top-[20px]">
-                01
+              <h2 className="text-[60px] font-bold absolute lg:right-[-15px] right-0 lg:top-[25px] md:top-[10px] top-[20px]">
+                0{imageCount}
               </h2>
+              <div className="absolute h-[55px] w-[55px] flex items-center justify-center top-[30%] left-[45%] bg-[#FF4E25] rounded-full">
+                <FaPlay />
+              </div>
             </div>
             <p className="leading-[25px] text-base capitalize ml-7 lg:max-w-[195px]">
               at the beginning of fitness journey need motivation
             </p>
           </div>
           <div className="flex gap-5 md:mx-0 mx-auto">
-            <CgArrowLongLeft className="text-[60px] hover:text-[#FF4E25]" />
-            <CgArrowLongRight className="text-[60px] hover:text-[#FF4E25]" />
+            <CgArrowLongLeft className="text-[60px] hover:text-[#FF4E25] cursor-pointer" onClick={PrevimageHandle}/>
+            <CgArrowLongRight className="text-[60px] hover:text-[#FF4E25] cursor-pointer" onClick={NextimageHandle}/>
           </div>
         </div>
       </section>

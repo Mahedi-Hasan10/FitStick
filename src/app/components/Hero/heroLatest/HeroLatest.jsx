@@ -27,7 +27,7 @@ const HeroLatest = () => {
                         <div href="/"  key={item.id} 
                         onClick={() => handleActive(item.id)}
                         style={{ backgroundColor: item.id === active ? '#ff4e25' : 'transparent' }}
-                        className={`py-3 px-8 hover:bg-[#ff4e25] text-white lg:mt-0 mt-2`}>{item.name}</div>
+                        className={`py-3 px-8 hover:bg-[#ff4e25] text-white lg:mt-0 mt-2 text-center`}>{item.name}</div>
                     ))} 
                 </div>
             </div>

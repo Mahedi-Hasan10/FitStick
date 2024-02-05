@@ -14,7 +14,7 @@ const ServiceCard = ({title, avetarSrc}) => {
         style={{
           height:267,
         }}
-        className='bg-transparent ml-4 mb-[50px] text-white border border-gray-500 hover:border-white max-w-[424px] '
+        className='bg-transparent ml-4 mb-[50px] text-white border border-gray-500 hover:border-white max-w-[424px] group transition-all duration-500'
        >
         <Meta 
          className='flex items-center capitalize line-clamp-1'
@@ -23,10 +23,10 @@ const ServiceCard = ({title, avetarSrc}) => {
          />
          <Meta className='line-clamp-2' description="I have been hiring people in this space for a number of years and I have "/>
         
-        <div className='text-white text-lg font-bold bottom-card flex items-center gap-5 mt-[10px]'>
-            <div className='btn-icon transition duration-500'></div>
-            <Link href="/">Read More</Link>
-        </div>
+         <div className='text-white text-lg font-bold bottom-card flex items-center gap-5 mt-[10px]'>
+                    <div className='h-[14px] w-[14px] bg-[#ff4e25] rounded-full group-hover:rounded-none group-hover:h-[1px] group-hover:w-[42px] transition-all duration-500'></div>
+                    <Link className='group-hover:opacity-100 opacity-50 text-lg font-bold' href="/">Read More</Link>
+          </div>
        
       
       </Card>
