@@ -1,4 +1,3 @@
-
 import Choose from "./components/Hero/chooseUs/Choose";
 import HeroServices from "./components/Hero/services/HeroServices";
 import HeroLatest from "./components/Hero/heroLatest/HeroLatest";
@@ -10,21 +9,18 @@ import LatestBlog from "./components/Hero/blog/LatestBlog";
 import Schedule from "./components/Hero/schedule/Schedule";
 import Hero from "./components/Hero/Hero";
 
-
 export default function Home() {
-
   return (
-    <main className=" flex flex-col lg:gap-[150px] md:gap-[80px] gap-[50px]">
-      <Hero/>
+    <main className=" flex flex-col lg:gap-[150px] md:gap-[100px] gap-[60px]">
+      <Hero />
       <Choose />
-      <HeroServices/>
-      <HeroLatest/>
-      <Schedule/>
-      <Team/>
-      <Pricing/>
-      <CustomerSay/>
-      <LatestBlog/>
-
+      <HeroServices />
+      <HeroLatest />
+      <Schedule />
+      <Team />
+      <Pricing />
+      <CustomerSay />
+      <LatestBlog />
     </main>
   );
 }

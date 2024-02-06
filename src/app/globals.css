@@ -98,3 +98,49 @@ body{
 .footer-link:hover{
     color: #FE4651!important;
 }
+
+
+.heading_1{
+    font-family: Mulish;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 0em;
+}
+
+.heading_2{
+    @apply lg:text-[48px] md:text-[35px] text-xl lg:font-bold font-semibold lg:leading-[57px] md:leading-10 leading-6;
+}
+
+.heading_3{
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    
+}
+
+.ant-card-meta-title{
+    @apply lg:text-[24px] md:text-[20px] !text-[16px] font-bold;
+}
+.ant-card-meta-description{
+    @apply lg:text-[16px] !text-[14px] font-normal lg:!leading-6 leading-5;
+}
+.ant-input{
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    outline: none!important;
+    border-radius: 0!important;
+    color: #fff!important;
+    @apply w-full focus:!outline-none !outline-none !bg-transparent border-b border-b-white !pb-3 !pt-2;
+}
+.ant-form-item-control-input{
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    outline: none!important;
+    background: none;
+
+}

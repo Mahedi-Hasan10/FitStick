@@ -11,8 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className=" bg-black text-white mx-auto ">
-        <section className="max-w-[1320px] mx-auto px-2">
+      <body className=" bg-black text-white mx-auto max-w-[1920px]">
+        <section className="max-w-[1320px] mx-auto md:px-[5px] px-[3px]">
           <Header/>
           {children}
         </section>
