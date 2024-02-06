@@ -3,12 +3,12 @@ import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaLinkedin, FaSkype } from 'react-icons/fa';
 const Team = () => {
     return (
-        <section className='py-12 lg:mt-[80px]'>
-        <div className='flex items-center justify-between mb-7'>
-            <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px]'>Team Of Expert Trainer</h2>
+        <section className=''>
+        <div className='flex items-center justify-between lg:mb-[60px] mb-5'>
+            <h2 className='lg:text-5xl md:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px]'>Team Of Expert Trainer</h2>
             <Link href="/" className='lg:text-lg text-base lg:font-bold font-medium text-[#FF4E25] underline'>View All</Link>
         </div>
-        <div className='flex lg:flex-nowrap flex-wrap gap-3 justify-center'>
+        <div className='flex lg:flex-nowrap flex-wrap gap-6 justify-center'>
             <div className='relative w-fit group cursor-pointer'>
                 <Image src="/team/team1.png" height={452} width={424} alt="team" />
                 <div 

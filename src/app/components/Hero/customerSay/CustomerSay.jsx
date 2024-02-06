@@ -65,11 +65,11 @@ const CustomerSay = () => {
     }
 
     return (
-        <section className="lg:mt-[100px] mt-12">
-            <h2 className='xl:text-5xl lg:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px] text-center capitalize'>What our saying about us</h2>
-            <div className='lg:mt-[60px] mt-8 flex lg:flex-nowrap flex-wrap justify-evenly gap-[40px]'>
+        <section className="">
+            <h2 className='lg:text-5xl md:text-3xl text-2xl 2xl:font-bold lg:font-semibold font-medium lg:leading-[57px] leading-[30px] text-center capitalize'>What our saying about us</h2>
+            <div className='lg:mt-[60px] mt-5 flex lg:flex-nowrap flex-wrap lg:gap-28 md:gap-12 gap-4'>
                 <div className='lg:w-[40%] lg:h-[431px]'>
-                <Image src={customerData[0]?.thumbnail} alt="group" width={372} height={431} className='f-full w-full border-r border-red-500 pr-4 border-b  pb-4 '/>
+                <Image src={customerData[0]?.thumbnail} alt="group" width={372} height={431} className='h-full border-r border-red-500 pr-4 border-b  pb-4 '/>
                 </div>
             
                 
@@ -84,73 +84,74 @@ const CustomerSay = () => {
                         spaceBetween={30}
                         className="mySwiper lg:max-w-[60%] relative"
                     >
-                <SwiperSlide>
-                <div className='flex flex-col gap-7 px-2 pt-2 pb-7 mt-2'>
-                    <div className='flex lg:gap-14 gap-6 items-center flex-wrap mx-auto'>
-                        {
-                            CustomerSayData.map((data,index) => (
-                                <div className=''  key={index} onClick={() => handleCustomer(data.id)}>
-                                        <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
-                                </div>
-                            ))
-                        }
-                    </div>
-             
-                    <div className='flex flex-col justify-end lg:mt-5'>
-                        <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-2'>{customerData[0]?.name}</h2>
-                        <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-6 mb-3'>{customerData[0]?.designation}</h4>
-                        <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4'>{customerData[0]?.description}</p>
-                            
-                    </div>
+                        <SwiperSlide>
+                        <div className='flex flex-col gap-6 mt-5 lg:ml-5'>
+                            <div className='flex lg:gap-[90px] gap-6 items-center md:flex-nowrap flex-wrap lg:mx-0 mx-auto'>
+                                {
+                                    CustomerSayData.map((data,index) => (
+                                        <div className=''  key={index} onClick={() => handleCustomer(data.id)}>
+                                                <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                    
+                            <div className='flex flex-col justify-end mt-6'>
+                                <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-1 line-clamp-1'>{customerData[0]?.name}</h2>
+                                <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-8 mb-4'>{customerData[0]?.designation}</h4>
+                                <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4 line-clamp-5'>{customerData[0]?.description}</p>
+                                    
+                            </div>
 
-                </div>
+                        </div>
 
-                </SwiperSlide>
-                <SwiperSlide>
-                <div className='flex flex-col gap-7 p-4 mt-2'>
-                    <div className='flex justify-around'>
-                        {
-                            CustomerSayData.map((data,index) => (
-                                <div  key={index} onClick={() => handleCustomer(data.id)}>
-                                        <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
-                                </div>
-                            ))
-                        }
-                    </div>
-             
-                    <div className='flex flex-col justify-end lg:mt-5'>
-                        <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-2'>{customerData[0]?.name}</h2>
-                        <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-6 mb-3'>{customerData[0]?.designation}</h4>
-                        <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4'>{customerData[0]?.description}</p>
-                            
-                    </div>
+                    </SwiperSlide>
+                        <SwiperSlide>
+                        <div className='flex flex-col gap-6 mt-5 lg:ml-5'>
+                            <div className='flex lg:gap-[90px] gap-6 items-center md:flex-nowrap flex-wrap lg:mx-0 mx-auto'>
+                                {
+                                    CustomerSayData.map((data,index) => (
+                                        <div className=''  key={index} onClick={() => handleCustomer(data.id)} >
+                                                <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                    
+                            <div className='flex flex-col justify-end mt-6'>
+                                <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-1 line-clamp-1'>{customerData[0]?.name}</h2>
+                                <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-8 mb-4'>{customerData[0]?.designation}</h4>
+                                <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4 line-clamp-5'>{customerData[0]?.description}</p>
+                                    
+                            </div>
 
-                </div>
+                        </div>
 
-                </SwiperSlide>
-                <SwiperSlide>
-                <div className='flex flex-col gap-7 p-4 mt-2'>
-                    <div className='flex justify-around'>
-                        {
-                            CustomerSayData.map((data,index) => (
-                                <div  key={index} onClick={() => handleCustomer(data.id)}>
-                                        <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
-                                </div>
-                            ))
-                        }
-                    </div>
-             
-                    <div className='flex flex-col justify-end lg:mt-5'>
-                        <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-2'>{customerData[0]?.name}</h2>
-                        <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-6 mb-3'>{customerData[0]?.designation}</h4>
-                        <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4'>{customerData[0]?.description}</p>
-                            
-                    </div>
+                    </SwiperSlide>
+                        <SwiperSlide>
+                        <div className='flex flex-col gap-6 mt-5 lg:ml-5'>
+                            <div className='flex lg:gap-[90px] gap-6 items-center md:flex-nowrap flex-wrap lg:mx-0 mx-auto'>
+                                {
+                                    CustomerSayData.map((data,index) => (
+                                        <div className=''  key={index} onClick={() => handleCustomer(data.id)}>
+                                                <CustomerImage thumbnail={CustomerSayData[index]?.image} setBgOpacity={active}/>
+                                        </div>
+                                    ))
+                                }
+                            </div>
+                    
+                            <div className='flex flex-col justify-end mt-6'>
+                                <h2 className='text-[#FF4E25] lg:text-2xl text-xl lg:font-bold font-semibold mb-1 line-clamp-1'>{customerData[0]?.name}</h2>
+                                <h4 className='text-[#CBCBCB] lg:text-lg text-base font-normal lg:mb-8 mb-4'>{customerData[0]?.designation}</h4>
+                                <p className='text-[#AAAAAA] xl:text-base text-sm font-normal lg:leading-6 leading-4 line-clamp-5'>{customerData[0]?.description}</p>
+                                    
+                            </div>
 
-                </div>
+                        </div>
 
-                </SwiperSlide>
+                    </SwiperSlide>
                
+      
                 
                
 

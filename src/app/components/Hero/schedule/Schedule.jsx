@@ -463,7 +463,7 @@ const Schedule = () => {
     );
   
     return (
-      <div className='lg:mt-[150px] md:mt-[80px] mt-8'>
+      <div className=''>
         <h1 className='lg:text-[48px] md:text-[35px] text-[30px] text-center lg:font-bold font-semibold lg:mb-[60px] mb-[30px] capitalize'>join our class</h1>
         <div className='flex justify-between lg:mx-[47px] mb-[40px] overflow-x-auto'>
           {events.map((item, i) => (

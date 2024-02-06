@@ -2,7 +2,7 @@ import React from 'react';
 
 const MyButton = ({buttonName,btnBG,Border}) => {
     return (
-        <button className={`lg:py-[14px] py-2 lg:px-[32px] px-[20px] ${btnBG} text-white rounded-md ${Border}`}>
+        <button className={`lg:py-4 py-2 lg:px-8 md:px-5 px-4 ${btnBG} text-white border-opacity-20 ${Border}`}>
           {buttonName}
         </button> 
     );

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Yoga Fundamentals",
+        "category": "youga",
+        "thumbnail":"/latest/l1.png"
+
+    },
+    {
+        "id": 2,
+        "name": "total body stretching",
+        "category": "strength",
+        "thumbnail":"/latest/l2.png"
+
+    },
+    {
+        "id": 3,
+        "name": "total body stretching",
+        "category": "strength",
+        "thumbnail":"/latest/l3.png"
+
+    },
+    {
+        "id": 4,
+        "name": "calorie workout",
+        "category": "pilates",
+        "thumbnail":"/latest/l4.png"
+
+    },
+    {
+        "id": 5,
+        "name": "fat burning butt and thigh",
+        "category": "cardio",
+        "thumbnail":"/latest/l5.png"
+
+    },
+    {
+        "id": 6,
+        "name": "strength upper body",
+        "category": "youga",
+        "thumbnail":"/latest/l6.png"
+
+    }
+]

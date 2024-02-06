@@ -69,3 +69,32 @@ body{
     left: 50%; /* Adjust the horizontal position */
     transform: translateX(-50%); /* Center the pagination horizontally */
   }
+
+.vector{
+    /* width: 48px;
+    height: 48px; */
+    animation: animate linear 3s infinite ;
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.ant-switch{
+    background-color: #FF4E25!important;
+}
+/* .ant-switch-checked{
+    background-color: white!important;
+} */
+
+.footer-link{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.footer-link:hover{
+    color: #FE4651!important;
+}

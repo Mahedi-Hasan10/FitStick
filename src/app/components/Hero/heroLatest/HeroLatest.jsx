@@ -1,43 +1,55 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link'
 import LatestCard from './LatestCard';
 
-
 const NAVLINKLIST = [
-    { id: 1, name: 'All' },
-    { id: 2, name: 'Youga' },
-    { id: 3, name: 'Strength' },
-    { id: 4, name: 'Cardio' },
-    { id: 5, name: 'Pilates' },
+    { id: 1, name: 'all' },
+    { id: 2, name: 'youga' },
+    { id: 3, name: 'strength' },
+    { id: 4, name: 'cardio' },
+    { id: 5, name: 'pilates' },
 ]
 
 const HeroLatest = () => {
-    const [active , setActive] = useState(1)
-    const handleActive = (id) => {
-        setActive(id)
+    const [latest, setLatest] = useState([])
+    const [active , setActive] = useState('all')
+    const handleActive = (name) => {
+        setActive(name)
     }
 
+    useEffect(() => {
+        fetch('/json/latest.json').then
+        (res => res.json())
+        .then(data => setLatest(data))
+        .catch(err => console.log(err))
+    }
+    , [])
+    const filteredLatest = active === 'all' ? latest : latest.filter(item => item.category == active);
+
     return (
-        <section className="lg:py-5 mx-auto lg:mt-[60px]">
-            <h1 className="lg:text-5xl text-[30px] lg:font-bold font-semibold lg:leading-[57px] leading-10 capitalize text-center">latest workout fitness</h1>
-            <div className='flex justify-center items-center mt-5'>
+        <section className="mx-auto">
+            <h1 className="lg:text-5xl text-[30px] lg:font-bold font-semibold lg:leading-[57px] leading-10 capitalize text-center lg:mb-12 mb-5">latest workout fitness</h1>
+            <div className='flex justify-center items-center lg:mb-10 mb-3'>
                 <div className='grid lg:grid-cols-5 grid-cols-3  lg:gap-[30px]  text-base lg:font-semibold font-medium '>
                     {NAVLINKLIST.map((item) => (
                         <div href="/"  key={item.id} 
-                        onClick={() => handleActive(item.id)}
-                        style={{ backgroundColor: item.id === active ? '#ff4e25' : 'transparent' }}
-                        className={`py-3 px-8 hover:bg-[#ff4e25] text-white lg:mt-0 mt-2 text-center`}>{item.name}</div>
+                        onClick={() => handleActive(item.name)}
+                        style={{ backgroundColor: item.name === active ? '#ff4e25' : 'transparent' }}
+                        className={`py-3 px-8 hover:bg-[#ff4e25] text-opacity${item.id === active ? '-100' : '-60'}   text-white text-center cursor-pointer capitalize`}>{item.name}</div>
                     ))} 
                 </div>
             </div>
-            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mt-5'>
-                <LatestCard/>
-                <LatestCard/>
-                <LatestCard/>
-                <LatestCard/>
-                <LatestCard/>
-                <LatestCard/>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 '>
+                {
+                filteredLatest ?
+                filteredLatest.map((item) => (
+                    <LatestCard key={item.id} item={item} />
+                )):
+                <h1>No data found</h1>
+                
+                }
+
             </div>
         </section>
     );

@@ -18,9 +18,9 @@ import { Pagination } from 'swiper/modules';
 
 const HeroServices = () => {
     return (
-        <section className='py-12 mt-5 overflow-hidden'>
-            <div className='flex items-center justify-between mb-[20px]'>
-                <h2 className='xl:text-5xl lg:text-3xl text-2xl lg:font-bold font-semibold lg:leading-[57px] leading-[30px]'>Services We&apos;re Offering</h2>
+        <section className='overflow-hidden'>
+            <div className='flex items-center justify-between lg:mb-[60px] mb-[20px]'>
+                <h2 className='lg:text-5xl md:text-3xl text-2xl lg:font-bold font-semibold lg:leading-[57px] leading-[30px]'>Services We&apos;re Offering</h2>
                 <Link href="/" className='lg:text-lg text-base lg:font-bold md:font-medium font-normal text-[#FF4E25] underline'>View All Services</Link>
             </div>
             <Swiper
@@ -29,8 +29,8 @@ const HeroServices = () => {
                           }}
                         modules={[Pagination]}
                         slidesPerView={3}
-                        spaceBetween={30}
-                        className="mySwiper py-[20px]"
+                        spaceBetween={24}
+                        className="mySwiper py-[20px] !px-0"
                         breakpoints={
                             {
                                 320: {
